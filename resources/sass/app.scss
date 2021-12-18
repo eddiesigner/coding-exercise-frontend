@@ -1,8 +1,19 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
+
+/* Because Bootstrap buttons have a black color text for some reason. */
+.btn {
+    color: white;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: white;
+    }
+}

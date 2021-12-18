@@ -11,6 +11,8 @@
         "@popperjs/core": "^2.9.2",
         "axios": "^0.21.1",
         "bootstrap": "^5.0.2",
+        "browser-sync": "^2.27.7",
+        "browser-sync-webpack-plugin": "^2.3.0",
         "cross-env": "^7.0.3",
         "jquery": "^3.6.0",
         "laravel-mix": "^6.0.25",

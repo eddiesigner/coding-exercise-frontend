@@ -4,9 +4,9 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+require("./bootstrap");
 
-window.Vue = require('vue').default;
+window.Vue = require("vue").default;
 
 /**
  * The following block of code may be used to automatically register your
@@ -19,7 +19,19 @@ window.Vue = require('vue').default;
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
-Vue.component('Home', require('./components/Home.vue').default);
+Vue.component("Home", require("./components/Home.vue").default);
+Vue.component(
+    "LocationFilter",
+    require("./components/LocationFilter.vue").default
+);
+Vue.component(
+    "CompanyFilter",
+    require("./components/CompanyFilter.vue").default
+);
+Vue.component("Search", require("./components/Search.vue").default);
+Vue.component("Job", require("./components/Job.vue").default);
+Vue.component("Login", require("./components/Login.vue").default);
+Vue.component("Add", require("./components/Add.vue").default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -28,5 +40,5 @@ Vue.component('Home', require('./components/Home.vue').default);
  */
 
 new Vue({
-    el: '#app',
+    el: "#app",
 });

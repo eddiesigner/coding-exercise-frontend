@@ -11286,3 +11286,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* Because Bootstrap buttons have a black color text for some reason. */
+.btn {
+  color: white;
+}
+.btn:hover, .btn:active, .btn:focus {
+  color: white;
+}
