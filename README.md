@@ -4,6 +4,31 @@ We're happy you applied for a job as frontend web developer at jobs.at :)
 Before you can get started at jobs.at, we have a small exercise for you where you can show us your skills
 as full-stack web developer.
 
+## Exercise notes
+
+1. Based on the exercise requirements, the home page loads only the most recent jobs (the ones which were published within last week). If you want to see all of them please adapt the `index` function in the `JobController.php` file accordingly, the necessary code is already in place ;)
+
+2. The credentials for the Login page are the following:
+
+```
+Username: admin
+Password: Pa$$w0rd!
+```
+
+3. The `/admin` route is not protected as it wasn’t required in the exercise, normally this page would be protected by a middleware.
+
+4. I configured **BrowserSync** in the project to work a bit faster since this plugin applies the frontend changes and refresh the page automatically.
+
+5. If a job ad is marked as inactive in the databse (taken by an applicant), the UI for that particular job would look like this:
+
+![localhost_3000_](https://user-images.githubusercontent.com/1477503/146680433-d2bf0e22-cf69-4548-9980-e0e93ab5a34b.png)
+
+
+## Webapp screenshot
+
+![jobs-at-coding-exercise](https://user-images.githubusercontent.com/1477503/146680195-fe67887e-013c-4a0c-84e0-e1e228f0a058.jpg)
+
+
 ## Exercise description
 
 At jobs.at we obviously have to deal a lot of with jobs, companies and people who are looking for a job.
